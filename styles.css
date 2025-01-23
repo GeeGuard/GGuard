@@ -18,7 +18,7 @@ body {
     text-align: center;
 }
 
-/* Logo and Eye Animation Container */
+/* Main container for logo and form */
 .container {
     display: flex;
     flex-direction: column;
@@ -34,11 +34,11 @@ body {
 /* Eye Animation */
 .eye-animation {
     position: absolute;
-    width: 80px;  /* Increased size */
-    height: 80px;  /* Increased size */
+    width: 80px;  /* Adjusted size */
+    height: 80px;  /* Adjusted size */
     background-color: red;
     border-radius: 50%;
-    top: 10px;
+    top: 120px;  /* Positioned below logo */
     left: 50%;
     transform: translateX(-50%);
     animation: eyeAnimation 2s infinite;
@@ -52,8 +52,8 @@ body {
         border-radius: 50%;
     }
     50% {
-        width: 100px;
-        height: 100px;
+        width: 100px;  /* Increased size */
+        height: 100px;  /* Increased size */
         border-radius: 10%;
     }
     100% {
@@ -65,7 +65,7 @@ body {
 
 /* Logo Styling */
 .logo {
-    max-width: 200px;  /* Increased logo size */
+    max-width: 300px;  /* Increased logo size */
     margin-top: 20px;
 }
 
@@ -78,7 +78,7 @@ body {
     padding: 20px;
     border-radius: 10px;  /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow for separation */
-    width: 280px;
+    width: 280px;  /* Adjusted form width */
 }
 
 /* Form Label Styling */
@@ -117,6 +117,7 @@ body {
 .login-form button:hover {
     background-color: #005bb5;
 }
+
 
 
 
