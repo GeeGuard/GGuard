@@ -8,8 +8,8 @@
 /* Body Style */
 body {
     font-family: Arial, sans-serif;
-    background-color: white;  /* White background */
-    color: black;  /* Black text */
+    background-color: white; /* White background */
+    color: black; /* Black text */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,17 +28,17 @@ body {
 /* Logo Container */
 .logo-container {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 /* Eye Animation */
 .eye-animation {
     position: absolute;
-    width: 80px;  /* Adjusted size */
-    height: 80px;  /* Adjusted size */
-    background-color: red;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    top: 120px;  /* Positioned below logo */
+    background-color: red;
+    top: 150px; /* Position below the logo */
     left: 50%;
     transform: translateX(-50%);
     animation: eyeAnimation 2s infinite;
@@ -51,10 +51,20 @@ body {
         height: 80px;
         border-radius: 50%;
     }
+    25% {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
     50% {
-        width: 100px;  /* Increased size */
-        height: 100px;  /* Increased size */
-        border-radius: 10%;
+        width: 60px; /* Smaller size for the closed eye */
+        height: 60px;
+        border-radius: 50%;
+    }
+    75% {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
     }
     100% {
         width: 80px;
@@ -65,7 +75,7 @@ body {
 
 /* Logo Styling */
 .logo {
-    max-width: 300px;  /* Increased logo size */
+    max-width: 350px; /* Increased logo size */
     margin-top: 20px;
 }
 
@@ -74,11 +84,11 @@ body {
     margin-top: 20px;
     display: inline-block;
     text-align: left;
-    background-color: white;  /* White background to match */
+    background-color: white; /* White background */
     padding: 20px;
-    border-radius: 10px;  /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow for separation */
-    width: 280px;  /* Adjusted form width */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 250px; /* Adjusted form width */
 }
 
 /* Form Label Styling */
@@ -117,6 +127,7 @@ body {
 .login-form button:hover {
     background-color: #005bb5;
 }
+
 
 
 
