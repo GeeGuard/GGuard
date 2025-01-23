@@ -3,34 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GeeGuard Login</title>
+    <title>GeeGuard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="logo-container">
-            <!-- Logo -->
-            <img src="logo.png" alt="GeeGuard Logo" class="logo">
-
-            <!-- Eye Animation -->
-            <div class="eye-animation"></div>
+            <img src="GeeGuardLogo.png" alt="GeeGuard Logo" class="logo">
         </div>
-
-        <!-- Login Form -->
-        <div class="login-form">
-            <label for="username">Enter your username:</label>
-            <input type="text" id="username" name="username" placeholder="Username">
-
-            <label for="password">Enter your password:</label>
-            <input type="password" id="password" name="password" placeholder="Password">
-
-            <button type="submit">Log in</button>
+        <div class="form-container">
+            <input type="text" placeholder="Enter your username:" class="input" id="username">
+            <input type="password" placeholder="Enter your password:" class="input" id="password">
+            <button class="login-btn">Log in</button>
+        </div>
+        <div class="eye-animation-container">
+            <div class="eye" id="eye"></div>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
