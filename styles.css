@@ -1,132 +1,85 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body Style */
+/* General styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: white; /* White background */
-    color: black; /* Black text */
+    background-color: white;
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    flex-direction: column;
+    margin: 0;
+}
+
+/* Container for the form and logo */
+.container {
     text-align: center;
 }
 
-/* Main container for logo and form */
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Logo Container */
+/* Logo styles */
 .logo-container {
-    position: relative;
     margin-bottom: 20px;
 }
 
-/* Eye Animation */
-.eye-animation {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background-color: red;
-    top: 150px; /* Position below the logo */
-    left: 50%;
-    transform: translateX(-50%);
-    animation: eyeAnimation 2s infinite;
-}
-
-/* Eye Animation keyframes */
-@keyframes eyeAnimation {
-    0% {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-    }
-    25% {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-    }
-    50% {
-        width: 60px; /* Smaller size for the closed eye */
-        height: 60px;
-        border-radius: 50%;
-    }
-    75% {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-    }
-    100% {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-    }
-}
-
-/* Logo Styling */
 .logo {
-    max-width: 350px; /* Increased logo size */
-    margin-top: 20px;
-}
-
-/* Login Form */
-.login-form {
-    margin-top: 20px;
-    display: inline-block;
-    text-align: left;
-    background-color: white; /* White background */
-    padding: 20px;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    width: 250px; /* Adjusted form width */
-}
-
-/* Form Label Styling */
-.login-form label {
-    font-size: 14px;
-    margin-bottom: 5px;
+    max-width: 250px; /* Adjust size of the logo */
     display: block;
-    text-align: center;
+    margin: 0 auto;
 }
 
-/* Form Input Styling */
-.login-form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
+/* Input and button styles */
+.input {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
     border-radius: 5px;
-    color: black;
-    font-size: 16px;
+    border: 1px solid #ddd;
 }
 
-/* Button Styling */
-.login-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #0066cc;
+.login-btn {
+    width: 80%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
     border: none;
     border-radius: 5px;
-    color: white;
-    font-size: 16px;
     cursor: pointer;
-    margin-top: 10px;
 }
 
-.login-form button:hover {
-    background-color: #005bb5;
+.login-btn:hover {
+    background-color: #0056b3;
 }
+
+/* Eye animation */
+.eye-animation-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.eye {
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 20px;
+    animation: blink 2s infinite;
+}
+
+/* Keyframe animation for the eyelid closing and opening */
+@keyframes blink {
+    0%, 100% {
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+    }
+    50% {
+        border-radius: 10% 10% 50% 50%;
+        width: 60px;
+        height: 30px; /* Simulating the eyelid closing */
+    }
+}
+
 
 
 
