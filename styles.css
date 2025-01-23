@@ -34,8 +34,8 @@ body {
 /* Eye Animation */
 .eye-animation {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 80px;  /* Increased size */
+    height: 80px;  /* Increased size */
     background-color: red;
     border-radius: 50%;
     top: 10px;
@@ -47,25 +47,25 @@ body {
 /* Eye Animation keyframes */
 @keyframes eyeAnimation {
     0% {
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
     }
     50% {
-        width: 70px;
-        height: 70px;
+        width: 100px;
+        height: 100px;
         border-radius: 10%;
     }
     100% {
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
     }
 }
 
 /* Logo Styling */
 .logo {
-    max-width: 150px;
+    max-width: 200px;  /* Increased logo size */
     margin-top: 20px;
 }
 
@@ -74,6 +74,11 @@ body {
     margin-top: 20px;
     display: inline-block;
     text-align: left;
+    background-color: white;  /* White background to match */
+    padding: 20px;
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow for separation */
+    width: 280px;
 }
 
 /* Form Label Styling */
@@ -81,12 +86,13 @@ body {
     font-size: 14px;
     margin-bottom: 5px;
     display: block;
+    text-align: center;
 }
 
 /* Form Input Styling */
 .login-form input {
-    width: 250px;
-    padding: 8px;
+    width: 100%;
+    padding: 10px;
     margin-bottom: 15px;
     background-color: #f2f2f2;
     border: 1px solid #ccc;
@@ -97,7 +103,7 @@ body {
 
 /* Button Styling */
 .login-form button {
-    width: 270px;
+    width: 100%;
     padding: 10px;
     background-color: #0066cc;
     border: none;
@@ -111,6 +117,7 @@ body {
 .login-form button:hover {
     background-color: #005bb5;
 }
+
 
 
 
